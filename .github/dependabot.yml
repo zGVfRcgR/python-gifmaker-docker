@@ -1,0 +1,12 @@
+# .github/dependabot.yml
+
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/"  # Dockerfile のあるディレクトリ（ルートの場合は "/"）
+    schedule:
+      interval: "weekly"  # 毎週チェック（daily, weekly, monthly が選べます）
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+    open-pull-requests-limit: 5
