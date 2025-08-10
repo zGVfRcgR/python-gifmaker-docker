@@ -19,4 +19,4 @@ def make_gif(input_folder, output_path, duration=200, loop=0):
 
 if __name__ == '__main__':
     # 例: imagesフォルダ内のPNG画像からoutput.gifを作成
-    make_gif('images', 'output.gif', duration=200, loop=0)
+    make_gif('images', 'images/output.gif', duration=200, loop=0)
