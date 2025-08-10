@@ -1,5 +1,5 @@
 # ベースイメージ（Python 3.10を使用）
-FROM python:3.10-slim
+FROM python:3.13-slim
 
 # 作業ディレクトリを作成
 WORKDIR /app
