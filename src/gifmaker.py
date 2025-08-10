@@ -7,7 +7,7 @@ def make_gif(input_folder, output_path, duration=200, loop=0):
     image_files = sorted(glob.glob(os.path.join(input_folder, '*.png')))
     if not image_files:
         raise ValueError('画像ファイルが見つかりません')
-    frames = [Image.open(img) for img in image_files]
+    frames = [Image.open(img).copy() for img in image_files]
     frames[0].save(
         output_path,
         save_all=True,
