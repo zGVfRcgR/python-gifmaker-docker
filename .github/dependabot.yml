@@ -10,3 +10,8 @@ updates:
       prefix: "deps"
       include: "scope"
     open-pull-requests-limit: 5
+  # Pythonパッケージ用
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
